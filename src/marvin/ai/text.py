@@ -163,7 +163,7 @@ async def _generate_typed_llm_response_with_tool(
         model_kwargs=model_kwargs,
         client=client,
     )
-    print(response.tool_outputs)
+    print(response)
     return response.tool_outputs[0]
 
 
